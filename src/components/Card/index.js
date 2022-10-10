@@ -6,17 +6,13 @@ import Down from "../../assets/images/down.png";
 export const Card = ({ idEmpresa, empresaNome, comentarios, sentimento }) => {
   const [corCard, setCorCard] = useState("");
 
-  const cor = () => {
+  useEffect(() => {
     if (sentimento === "Bullish") {
       setCorCard("green");
     } else {
       setCorCard("red");
     }
-  };
-
-  useEffect(() => {
-    cor();
-  }, []);
+  }, [sentimento]);
 
   return (
     <div className={`card ` + corCard}>
