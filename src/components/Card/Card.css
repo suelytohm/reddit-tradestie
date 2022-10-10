@@ -1,0 +1,24 @@
+.card {
+  padding: 20px;
+  color: #fff;
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+  border: #fff 3px solid;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.green {
+  background-color: #059862;
+  box-shadow: 0 4px 8px 0 rgba(5, 152, 98, 0.9);
+}
+
+.red {
+  background-color: rgb(197, 61, 114);
+  box-shadow: 0 4px 8px 0 rgba(197, 61, 114, 0.9);
+}
+
+.card img {
+  width: 70px;
+}
